@@ -2,9 +2,9 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'events-app',
-  template: `
+  template: /*html*/  `
     <nav-bar></nav-bar>
-    <events-list></events-list>
+    <router-outlet></router-outlet>    
   `
 })
 export class EventsAppComponent {
