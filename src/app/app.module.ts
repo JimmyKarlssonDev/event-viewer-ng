@@ -14,7 +14,6 @@ import {
 
 import { CreateSessionComponent} from './events/event-detail/create-session.component'
 import { SessionComponent} from './events/event-detail/sesssion-list.component'
-
 import {EventsAppComponent} from './events-app.component';
 import { NavBarComponent } from './nav/nav-bar.component';
 import { ToastrService } from './common/toastr.service';
@@ -22,6 +21,7 @@ import {appRoutes} from './routes';
 import { Error404Component } from './error/404.component';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CollapsibleWellComponent } from './common/collapsible-well.component';
 
 
 @NgModule({
@@ -40,7 +40,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     Error404Component,
     NavBarComponent,
     CreateSessionComponent,
-    SessionComponent
+    SessionComponent,
+    CollapsibleWellComponent
   ],
   providers: [
     EventService, 
