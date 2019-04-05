@@ -18,10 +18,13 @@ import { ToastrService } from './common/toastr.service';
 import {appRoutes} from './routes';
 import { Error404Component } from './error/404.component';
 import { AuthService } from './user/auth.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
@@ -32,8 +35,7 @@ import { AuthService } from './user/auth.service';
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component,
-    NavBarComponent,
-    
+    NavBarComponent    
   ],
   providers: [
     EventService, 
